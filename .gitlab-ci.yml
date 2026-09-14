@@ -1,0 +1,10 @@
+﻿pages:
+  stage: deploy
+  script:
+    - mkdir -p public
+    - cp privacy-policy.html public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
